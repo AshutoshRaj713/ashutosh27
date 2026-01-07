@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developers Only</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: rgba(0, 0, 0, 0.65);
+            padding: 32px;
+            max-width: 520px;
+            width: 100%;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: clamp(24px, 5vw, 34px);
+            color: #00ffe7;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: clamp(15px, 4vw, 18px);
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+
+        .highlight {
+            color: #ffd369;
+            font-weight: 600;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 14px 34px;
+            background: #00ffe7;
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 40px;
+            transition: 0.3s ease;
+        }
+
+        .contact-btn:hover {
+            transform: scale(1.05);
+            background: #ffd369;
+        }
+
+        .footer {
+            margin-top: 22px;
+            font-size: 15px;
+            opacity: 0.85;
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>⚠ Developers Only Zone</h1>
+
+        <p>
+            This code is <span class="highlight">strictly for Developers and Software Engineers</span>.
+            If you are passionate about coding, development, and technology,
+            then this content is made for you.
+        </p>
+
+        <p>
+            If you are an <span class="highlight">interested person</span> and want to access or use this code,
+            please contact us for further details.
+        </p>
+
+        <a href="#contact" class="contact-btn">📩 Contact Now</a>
+
+        <div class="footer">
+            Built with ❤️ for Developers
+        </div>
+    </div>
+
+</body>
+</html>
