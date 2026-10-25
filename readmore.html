@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Services</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: #ffffff;
+    }
+
+    h1 {
+        text-align: center;
+        padding: 25px 15px;
+        font-size: clamp(26px, 5vw, 40px);
+        color: #00ffe7;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .card {
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 18px;
+        padding: 22px;
+        box-shadow: 0 10px 35px rgba(0,255,255,0.2);
+        transition: 0.35s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 55px rgba(255,211,105,0.4);
+    }
+
+    .card h2 {
+        font-size: 22px;
+        color: #ffd369;
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        font-size: 15px;
+        line-height: 1.6;
+        opacity: 0.9;
+    }
+
+    .examples {
+        margin-top: 10px;
+    }
+
+    .examples a {
+        display: inline-block;
+        margin: 6px 8px 0 0;
+        font-size: 14px;
+        color: #00ffe7;
+        text-decoration: none;
+        border-bottom: 1px dashed #00ffe7;
+    }
+
+    .price {
+        margin-top: 14px;
+        display: inline-block;
+        padding: 8px 16px;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #00ff9d;
+        background: rgba(0,255,157,0.12);
+    }
+
+    .note {
+        margin: 25px 15px;
+        padding: 22px;
+        text-align: center;
+        background: rgba(0,0,0,0.6);
+        border-radius: 15px;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .note span {
+        color: #ffd369;
+        font-weight: bold;
+    }
+
+    .whatsapp {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 14px 32px;
+        background: #25D366;
+        color: #000;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 40px;
+        transition: 0.3s;
+    }
+
+    .whatsapp:hover {
+        transform: scale(1.05);
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px 10px;
+        font-size: 14px;
+        opacity: 0.8;
+    }
+
+    /* 🔹 Extra Mobile Optimization */
+    @media (max-width: 480px) {
+        .card {
+            padding: 18px;
+        }
+
+        .card h2 {
+            font-size: 20px;
+        }
+
+        .price {
+            font-size: 15px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<h1>💼 My Professional Services</h1>
+
+<div class="container">
+
+  <div class="note">
+    ⚠ <span>Note:</span> Charges <span>per hour</span> hain aur  
+    <span>your special needs</span> par depend karte hain.  
+    <br>
+    Kisi bhi doubt, special requirement ya project ke liye  
+    <br>
+    <a href="https://wa.me/917061568662" class="whatsapp" target="_blank">💬 Contact on WhatsApp</a>
+</div>
+
+    <div class="card">
+        <h2>🌐 Landing Page Designing</h2>
+        <p>There are three types of landing pages: portfolio, business, and product.</p>
+        <div class="examples">
+            <a href="#">Portfolio</a>
+            <a href="#">Product</a>
+            <a href="#">Business Site</a>
+        </div>
+        <div class="price">₹400 – ₹1200 /-</div>
+    </div>
+
+
+    <div class="card">
+        <h2>🌐 Web Designing</h2>
+        <p>Responsive aur modern website designs jo har device par perfect dikhte hain.</p>
+        <div class="examples">
+            <a href="#">Portfolio</a>
+            <a href="#">Landing Page</a>
+            <a href="#">Business Site</a>
+        </div>
+        <div class="price">₹600 – ₹1200 / hour</div>
+    </div>
+
+    <div class="card">
+        <h2>🎨 Graphics Designing</h2>
+        <p>Logos, posters aur social media creatives with clean & attractive design.</p>
+        <div class="examples">
+            <a href="#">Logo</a>
+            <a href="#">Instagram Post</a>
+            <a href="#">Banner</a>
+        </div>
+        <div class="price">₹500 – ₹1000 / hour</div>
+    </div>
+
+    <div class="card">
+        <h2>⚙ Website Development</h2>
+        <p>Dynamic websites with frontend & backend support.</p>
+        <div class="examples">
+            <a href="#">Admin Panel</a>
+            <a href="#">Forms</a>
+            <a href="#">Dynamic Pages</a>
+        </div>
+        <div class="price">₹800 – ₹1800 / hour</div>
+    </div>
+
+    <div class="card">
+        <h2>📱 Application Development</h2>
+        <p>Simple to normal applications jo real-world problems solve karti hain.</p>
+        <div class="examples">
+            <a href="#">Billing App</a>
+            <a href="#">Student App</a>
+            <a href="#">Utility App</a>
+        </div>
+        <div class="price">₹1000 – ₹2500 / hour</div>
+    </div>
+
+</div>
+
+
+<footer>
+    © 2026 | Crafted with ❤️ by Ashutosh Raj
+</footer>
+
+</body>
+</html>
